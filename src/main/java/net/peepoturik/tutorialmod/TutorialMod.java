@@ -3,6 +3,7 @@ package net.peepoturik.tutorialmod;
 import net.fabricmc.api.ModInitializer;
 
 import net.peepoturik.tutorialmod.blocks.ModBlocks;
+import net.peepoturik.tutorialmod.item.ModItemGroups;
 import net.peepoturik.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,5 +17,6 @@ public class TutorialMod implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModItemGroups.registerItemGroups();
 	}
 }
